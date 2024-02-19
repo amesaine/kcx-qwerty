@@ -5,28 +5,28 @@ xkb_symbols "qwerty" {
 
     include "kcxvar/qwerty(alphabet)"
 
-    key <TLDE> {	[     grave,	at	]	};
-    key <AE01> {	[	  1,	bar 		]	};
+    key <TLDE> {	[     equal,	at	]	};
+    key <AE01> {	[	  1,	numbersign 		]	};
     key <AE02> {	[	  2,	braceleft		]	};
     key <AE03> {	[	  3,	braceright	]	};
     key <AE04> {	[	  4,	quotedbl		]	};
     key <AE05> {	[	  5,	dollar		]	};
-    key <AE06> {	[	  6,	asterisk	]	};
+    key <AE06> {	[	  6,	asciicircum	]	};
     key <AE07> {	[	  7,	underscore	]	};
-    key <AE08> {	[	  8,	percent	]	};
+    key <AE08> {	[	  8,	asterisk	]	};
     key <AE09> {	[	  9,	parenleft	]	};
     key <AE10> {	[	  0,	parenright	]	};
-    key <AE11> {	[     minus,	numbersign	]	};
-    key <AE12> {	[     equal,	plus		]	};
-    replace key <BKSP> { [ apostrophe, exclam ] };
+    key <AE11> {	[     minus,	exclam	]	};
+    key <AE12> {	[     semicolon,	plus		]	};
+    replace key <BKSP> { [ grave, percent ] };
 
     key <AD11> { type[Group1]="ONE_LEVEL", [ BackSpace ] };
     key <AD12> { [ bracketleft, less ] }; 
     key <BKSL> { [ bracketright, greater ]};
 
-    key <AC10> {	[ semicolon,	colon		]	};
+    key <AC10> {	[ apostrophe,	colon		]	};
     key <AC11> { type[Group1]="ONE_LEVEL", [ Return ] };
-    replace key <RTRN> { [ backslash, asciicircum ] };
+    replace key <RTRN> { [ backslash, bar ] };
 
     key <AB08> {	[     comma,	ampersand		]	};
     key <AB09> {	[    period,	question		]	};
