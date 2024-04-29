@@ -149,8 +149,8 @@ Acknowledgement
 - Created with [keyboard-layout-editor.com][keyboard-layout-editor]. 
 - JSON for all layouts are available in [assets][assets].
 
-[kcx-qwerty-pic]: https://github.com/jnz1g/dotfiles/blob/master/.config/xkb/assets/kcx-qwerty.png
-[kcx-homerow-symbols-pic]: https://github.com/jnz1g/dotfiles/blob/master/.config/xkb/assets/kcx-homerow-symbols.png
+[kcx-qwerty-pic]: https://github.com/jnz1g/kcx-qwerty/blob/main/assets/kcx-qwerty.png
+[kcx-homerow-symbols-pic]: https://github.com/jnz1g/kcx-qwerty/blob/main/assets/kcx-homerow-symbols.png
 [assets]: https://github.com/jnz1g/dotfiles/tree/master/.config/xkb/assets
 [sway-kbfb]: https://github.com/jnz1g/dotfiles/blob/master/.config/sway/bin/sway-kbfb
 
