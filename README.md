@@ -26,14 +26,13 @@ Quickstart
 ### Installation
 
 ```sh
-git clone --no-checkout --depth=1 --filter=tree:0 https://github.com/jnz1g/dotfiles
-cd dotfiles
-git sparse-checkout set --no-cone .config/xkb
-git checkout
-mkdir --parents $HOME/.config/xkb/rules
-mkdir --parents $HOME/.config/xkb/symbols
-cp --recursive --suffix=.bak .config/xkb/rules/* $HOME/.config/xkb/rules/
-cp --recursive --suffix=.bak .config/xkb/symbols/* $HOME/.config/xkb/symbols/
+git clone https://github.com/jnz1g/kcx-qwerty
+cd kcx-qwerty
+mkdir --parents $XDG_CONFIG_HOME/xkb/rules
+mkdir $XDG_CONFIG_HOME/xkb/symbols
+cp --suffix=.bak rules/* $XDG_CONFIG_HOME/xkb/rules/
+cp --suffix=.bak symbols/* $XDG_CONFIG_HOME/xkb/symbols/
+cp --suffix=.bak .XCompose $HOME/.XCompose
 ```
 
 > [!NOTE]
@@ -41,6 +40,7 @@ cp --recursive --suffix=.bak .config/xkb/symbols/* $HOME/.config/xkb/symbols/
 will be saved as *evdev.xml.bak*
 
 ### Sway
+
 ```
 set $kb "1:1:AT_Translated_Set_2_keyboard"
 input $kb {
