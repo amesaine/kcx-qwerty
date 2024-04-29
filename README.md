@@ -28,11 +28,10 @@ Quickstart
 ```sh
 git clone https://github.com/jnz1g/kcx-qwerty
 cd kcx-qwerty
-mkdir --parents $XDG_CONFIG_HOME/xkb/rules
-mkdir $XDG_CONFIG_HOME/xkb/symbols
-cp --suffix=.bak rules/* $XDG_CONFIG_HOME/xkb/rules/
-cp --suffix=.bak symbols/* $XDG_CONFIG_HOME/xkb/symbols/
-cp --suffix=.bak .XCompose $HOME/.XCompose
+mkdir --parents $HOME/.config/xkb/rules
+mkdir $HOME/.config/xkb/symbols
+cp --suffix=.bak rules/* $HOME/.config/xkb/rules/
+cp --suffix=.bak symbols/* $HOME/.config/xkb/symbols/
 ```
 
 > [!NOTE]
