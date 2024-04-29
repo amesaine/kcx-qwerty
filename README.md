@@ -161,8 +161,7 @@ Acknowledgement
 
 [kcx-qwerty-pic]: https://github.com/jnz1g/kcx-qwerty/blob/main/assets/kcx-qwerty.png
 [kcx-homerow-symbols-pic]: https://github.com/jnz1g/kcx-qwerty/blob/main/assets/kcx-homerow-symbols.png
-[assets]: https://github.com/jnz1g/dotfiles/tree/master/.config/xkb/assets
-[sway-kbfb]: https://github.com/jnz1g/dotfiles/blob/master/.config/sway/bin/sway-kbfb
+[assets]: https://github.com/jnz1g/kcx-qwerty/tree/main/assets
 
 [keyboard-layout-editor]: http://www.keyboard-layout-editor.com/
 [xoff/xon]: https://unix.stackexchange.com/a/12108/593070
