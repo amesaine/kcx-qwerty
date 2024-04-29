@@ -25,11 +25,6 @@ xkb_symbols "e_becomes_end" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "i_becomes_insert" { 
-    replace key <AD08> { type[Group1]="ONE_LEVEL", [ Insert ] };
-};
-
-partial alphanumeric_keys
 xkb_symbols "s_becomes_lfsh" { 
     replace key <AC02> { type[Group1]="ONE_LEVEL", [ Shift_L ] };
 };
