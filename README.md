@@ -8,6 +8,9 @@ vim users, and terminal hobbits in mind.
 - Emulate vim motions ***everywhere***
 - Additional layouts are provided to take advantage of keyboard layout switching. 
 
+> [!NOTE]
+> Check out my new layout, [Colejak][colejak]. It's better! 
+
 Layouts
 -------
 
@@ -162,6 +165,7 @@ Acknowledgement
 [kcx-qwerty-pic]: https://github.com/jnz1g/kcx-qwerty/blob/main/assets/kcx-qwerty.png
 [kcx-homerow-symbols-pic]: https://github.com/jnz1g/kcx-qwerty/blob/main/assets/kcx-homerow-symbols.png
 [assets]: https://github.com/jnz1g/kcx-qwerty/tree/main/assets
+[colejak]: https://github.com/jnz1g/colejak
 
 [keyboard-layout-editor]: http://www.keyboard-layout-editor.com/
 [xoff/xon]: https://unix.stackexchange.com/a/12108/593070
