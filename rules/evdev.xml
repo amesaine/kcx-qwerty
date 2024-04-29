@@ -10,8 +10,7 @@
         <variant>
           <configItem>
             <name>qwerty</name>
-            <!-- I don't know what short description is for lol -->
-            <shortDescription>banana</shortDescription>
+            <shortDescription>kcx</shortDescription>
             <description>KCX (Qwerty)</description>
           </configItem>
         </variant>
