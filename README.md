@@ -22,7 +22,7 @@ Quickstart
 
 ### Installation
 
-```
+```sh
 git clone --no-checkout --depth=1 --filter=tree:0 https://github.com/jnz1g/dotfiles
 cd dotfiles
 git sparse-checkout set --no-cone .config/xkb
@@ -49,16 +49,26 @@ input $kb {
 bindsym Control+semicolon exec swaymsg input $kb xkb_switch_layout next
 ```
 
-You can use my [bash script][sway-kbfb] if you want to change focused window border colors when switching layouts.
+My bash script to change focused window border colors when switching layouts.
 
-```
-set $lay1_n "KCX (Qwerty)"
-set $lay1_c "$green $green $green $white $green"
-set $lay2_n "KCX (Homerow Symbols)"
-set $lay2_c "$red $red $red $white $red"
-bindsym Control+semicolon exec sway-kbfb $kb $lay1_n $lay1_c $lay2_n $lay2_c
-```
+```sh
+#!/bin/sh
 
+change_color() {
+    case $1 in 
+        "KCX (Qwerty)")
+            swaymsg client.focused "#50FA7B #50FA7B #50FA7B #F8F8F2"
+            ;;
+        "KCX (Homerow Symbols)")
+            swaymsg client.focused "#FF5555 #FF5555 #FF5555 #F8F8F2"
+            ;;
+    esac
+}
+
+swaymsg -t subscribe '["input"]' -m \
+    | jq -r --unbuffered 'select(.change == "xkb_layout").input.xkb_active_layout_name' \
+    | while read layout; do change_color "$layout"; done
+```
 
 
 ### GNOME
