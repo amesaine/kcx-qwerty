@@ -29,9 +29,9 @@ Quickstart
 git clone https://github.com/jnz1g/kcx-qwerty
 cd kcx-qwerty
 mkdir --parents $HOME/.config/xkb/rules
-mkdir $HOME/.config/xkb/symbols
-cp --suffix=.bak rules/* $HOME/.config/xkb/rules/
-cp --suffix=.bak symbols/* $HOME/.config/xkb/symbols/
+mkdir --parents $HOME/.config/xkb/symbols
+cp -r --suffix=.bak rules/* $HOME/.config/xkb/rules/
+cp -r --suffix=.bak symbols/* $HOME/.config/xkb/symbols/
 ```
 
 > [!NOTE]
